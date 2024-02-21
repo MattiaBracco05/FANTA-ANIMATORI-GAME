@@ -86,6 +86,28 @@
 
   <!-- Inizio del main -->
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    
+    <!-- Inizio della navbar (toggle) -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+          <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <ul class="navbar-nav  justify-content-end">
+              <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                  <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  </div>
+              </a>
+              </li>
+          </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Fine della navbar (toggle) -->    
+
+    <!-- Inizio del container -->
     <div class="container-fluid py-4">
       <div class="row min-vh-80">
         <div class="col-12">
@@ -1868,6 +1890,8 @@
       <!-- Fine del footer -->
 
     </div>
+    <!-- Fine del container -->
+  
   </main>
   <!-- Fine del main -->
 
@@ -1926,15 +1950,6 @@
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
